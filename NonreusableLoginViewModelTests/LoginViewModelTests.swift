@@ -46,7 +46,7 @@ class LoginViewModelTests: XCTestCase {
         let loginViewModel = LoginViewModel()
         let loginStateExpectation = XCTKVOExpectation(keyPath: "loginState", object: loginViewModel)
         todoWithViewModel(loginViewModel)
-        wait(for: [loginStateExpectation], timeout: 1)
+        wait(for: [loginStateExpectation], timeout: 2)
         then(loginViewModel)
     }
     
