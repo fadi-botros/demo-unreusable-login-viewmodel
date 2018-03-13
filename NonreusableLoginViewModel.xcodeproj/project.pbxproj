@@ -12,8 +12,9 @@
 		0D2B915B2057E34000B12944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2B91592057E34000B12944 /* Main.storyboard */; };
 		0D2B915D2057E34000B12944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2B915C2057E34000B12944 /* Assets.xcassets */; };
 		0D2B91602057E34000B12944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D2B915E2057E34000B12944 /* LaunchScreen.storyboard */; };
-		0D2B916B2057E34000B12944 /* NonreusableLoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B916A2057E34000B12944 /* NonreusableLoginViewModelTests.swift */; };
+		0D2B916B2057E34000B12944 /* UserLoginStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B916A2057E34000B12944 /* UserLoginStateTests.swift */; };
 		0D2B91762057E34000B12944 /* NonreusableLoginViewModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91752057E34000B12944 /* NonreusableLoginViewModelUITests.swift */; };
+		0D2B91842057F92C00B12944 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91832057F92C00B12944 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,12 @@
 		0D2B915F2057E34000B12944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D2B91612057E34000B12944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2B91662057E34000B12944 /* NonreusableLoginViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonreusableLoginViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D2B916A2057E34000B12944 /* NonreusableLoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonreusableLoginViewModelTests.swift; sourceTree = "<group>"; };
+		0D2B916A2057E34000B12944 /* UserLoginStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginStateTests.swift; sourceTree = "<group>"; };
 		0D2B916C2057E34000B12944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2B91712057E34000B12944 /* NonreusableLoginViewModelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonreusableLoginViewModelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D2B91752057E34000B12944 /* NonreusableLoginViewModelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonreusableLoginViewModelUITests.swift; sourceTree = "<group>"; };
 		0D2B91772057E34000B12944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D2B91832057F92C00B12944 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				0D2B915C2057E34000B12944 /* Assets.xcassets */,
 				0D2B915E2057E34000B12944 /* LaunchScreen.storyboard */,
 				0D2B91612057E34000B12944 /* Info.plist */,
+				0D2B91832057F92C00B12944 /* User.swift */,
 			);
 			path = NonreusableLoginViewModel;
 			sourceTree = "<group>";
@@ -110,7 +113,7 @@
 		0D2B91692057E34000B12944 /* NonreusableLoginViewModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				0D2B916A2057E34000B12944 /* NonreusableLoginViewModelTests.swift */,
+				0D2B916A2057E34000B12944 /* UserLoginStateTests.swift */,
 				0D2B916C2057E34000B12944 /* Info.plist */,
 			);
 			path = NonreusableLoginViewModelTests;
@@ -261,6 +264,7 @@
 			files = (
 				0D2B91582057E34000B12944 /* ViewController.swift in Sources */,
 				0D2B91562057E34000B12944 /* AppDelegate.swift in Sources */,
+				0D2B91842057F92C00B12944 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D2B916B2057E34000B12944 /* NonreusableLoginViewModelTests.swift in Sources */,
+				0D2B916B2057E34000B12944 /* UserLoginStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
