@@ -16,6 +16,8 @@
 		0D2B91762057E34000B12944 /* NonreusableLoginViewModelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91752057E34000B12944 /* NonreusableLoginViewModelUITests.swift */; };
 		0D2B91842057F92C00B12944 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91832057F92C00B12944 /* User.swift */; };
 		0D2B9186205808FD00B12944 /* UserLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9185205808FD00B12944 /* UserLoginState.swift */; };
+		0D2B91882058138F00B12944 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91872058138F00B12944 /* LoginViewModelTests.swift */; };
+		0D2B918A2058201600B12944 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91892058201600B12944 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		0D2B91772057E34000B12944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D2B91832057F92C00B12944 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0D2B9185205808FD00B12944 /* UserLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginState.swift; sourceTree = "<group>"; };
+		0D2B91872058138F00B12944 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		0D2B91892058201600B12944 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				0D2B91612057E34000B12944 /* Info.plist */,
 				0D2B91832057F92C00B12944 /* User.swift */,
 				0D2B9185205808FD00B12944 /* UserLoginState.swift */,
+				0D2B91892058201600B12944 /* LoginViewModel.swift */,
 			);
 			path = NonreusableLoginViewModel;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				0D2B916A2057E34000B12944 /* UserLoginStateTests.swift */,
 				0D2B916C2057E34000B12944 /* Info.plist */,
+				0D2B91872058138F00B12944 /* LoginViewModelTests.swift */,
 			);
 			path = NonreusableLoginViewModelTests;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 				0D2B9186205808FD00B12944 /* UserLoginState.swift in Sources */,
 				0D2B91582057E34000B12944 /* ViewController.swift in Sources */,
 				0D2B91562057E34000B12944 /* AppDelegate.swift in Sources */,
+				0D2B918A2058201600B12944 /* LoginViewModel.swift in Sources */,
 				0D2B91842057F92C00B12944 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2B91882058138F00B12944 /* LoginViewModelTests.swift in Sources */,
 				0D2B916B2057E34000B12944 /* UserLoginStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
