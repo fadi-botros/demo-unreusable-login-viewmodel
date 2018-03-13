@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +14,74 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NonreusableLoginViewModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wjg-bA-QJ2">
+                                <rect key="frame" x="30.5" y="283" width="313" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LMD-CJ-xAs">
+                                        <rect key="frame" x="16" y="16" width="281" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l4c-9f-S03">
+                                        <rect key="frame" x="16" y="54" width="281" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.987688601" green="0.82422924040000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="LMD-CJ-xAs" firstAttribute="centerX" secondItem="Wjg-bA-QJ2" secondAttribute="centerX" id="5M8-e9-kH5"/>
+                                    <constraint firstItem="LMD-CJ-xAs" firstAttribute="top" secondItem="Wjg-bA-QJ2" secondAttribute="top" constant="16" id="8v5-n6-xhq"/>
+                                    <constraint firstItem="l4c-9f-S03" firstAttribute="top" secondItem="LMD-CJ-xAs" secondAttribute="bottom" constant="8" id="PiD-Fp-zDL"/>
+                                    <constraint firstAttribute="bottom" secondItem="l4c-9f-S03" secondAttribute="bottom" constant="16" id="aNR-4z-RM3"/>
+                                    <constraint firstItem="LMD-CJ-xAs" firstAttribute="leading" secondItem="Wjg-bA-QJ2" secondAttribute="leading" constant="16" id="cXR-1v-rwP"/>
+                                    <constraint firstAttribute="trailing" secondItem="LMD-CJ-xAs" secondAttribute="trailing" constant="16" id="dof-MA-Bht"/>
+                                    <constraint firstItem="l4c-9f-S03" firstAttribute="centerX" secondItem="Wjg-bA-QJ2" secondAttribute="centerX" id="rxl-Dj-be1"/>
+                                    <constraint firstItem="l4c-9f-S03" firstAttribute="width" secondItem="LMD-CJ-xAs" secondAttribute="width" id="u5u-tE-UiV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOS-cp-eKO">
+                                <rect key="frame" x="150" y="383" width="74" height="30"/>
+                                <color key="backgroundColor" red="0.98817938569999997" green="0.83957344290000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="    Log in    "/>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gO6-3h-yah"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dwp-G9-tKE">
+                                <rect key="frame" x="177" y="421" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dwp-G9-tKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1s4-XV-fp5"/>
+                            <constraint firstItem="dwp-G9-tKE" firstAttribute="top" secondItem="qOS-cp-eKO" secondAttribute="bottom" constant="8" id="4mP-l8-wJR"/>
+                            <constraint firstItem="qOS-cp-eKO" firstAttribute="top" secondItem="Wjg-bA-QJ2" secondAttribute="bottom" id="Ge9-lP-Aco"/>
+                            <constraint firstItem="Wjg-bA-QJ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Go5-eO-bJg"/>
+                            <constraint firstItem="Wjg-bA-QJ2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KkR-2u-AW9"/>
+                            <constraint firstItem="LMD-CJ-xAs" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="VXn-Aa-aPg"/>
+                            <constraint firstItem="qOS-cp-eKO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iKh-Ip-5Bv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="dwp-G9-tKE" id="ZwY-bk-B0g"/>
+                        <outlet property="loginButton" destination="qOS-cp-eKO" id="acG-cB-Qtv"/>
+                        <outlet property="passwordTextField" destination="l4c-9f-S03" id="Wa1-GS-1Hs"/>
+                        <outlet property="userNameTextField" destination="LMD-CJ-xAs" id="b4B-pg-MN9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

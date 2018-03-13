@@ -18,6 +18,7 @@
 		0D2B9186205808FD00B12944 /* UserLoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B9185205808FD00B12944 /* UserLoginState.swift */; };
 		0D2B91882058138F00B12944 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91872058138F00B12944 /* LoginViewModelTests.swift */; };
 		0D2B918A2058201600B12944 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B91892058201600B12944 /* LoginViewModel.swift */; };
+		0D2B918C20582D2800B12944 /* RepositoryInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2B918B20582D2800B12944 /* RepositoryInjector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0D2B9185205808FD00B12944 /* UserLoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginState.swift; sourceTree = "<group>"; };
 		0D2B91872058138F00B12944 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		0D2B91892058201600B12944 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0D2B918B20582D2800B12944 /* RepositoryInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInjector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				0D2B91832057F92C00B12944 /* User.swift */,
 				0D2B9185205808FD00B12944 /* UserLoginState.swift */,
 				0D2B91892058201600B12944 /* LoginViewModel.swift */,
+				0D2B918B20582D2800B12944 /* RepositoryInjector.swift */,
 			);
 			path = NonreusableLoginViewModel;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D2B9186205808FD00B12944 /* UserLoginState.swift in Sources */,
+				0D2B918C20582D2800B12944 /* RepositoryInjector.swift in Sources */,
 				0D2B91582057E34000B12944 /* ViewController.swift in Sources */,
 				0D2B91562057E34000B12944 /* AppDelegate.swift in Sources */,
 				0D2B918A2058201600B12944 /* LoginViewModel.swift in Sources */,
