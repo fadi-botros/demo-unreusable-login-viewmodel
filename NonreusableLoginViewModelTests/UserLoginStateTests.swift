@@ -15,6 +15,9 @@ class UserLoginStateTests: XCTestCase {
         let userLoginState = UserLoginState(userName: "user1", email: "user1@users.com", phone: "123456789")
         XCTAssertEqual(userLoginState.isLoggedIn, true)
         XCTAssertEqual(userLoginState.user, User(userName: "user1", email: "user1@users.com", phone: "123456789"))
+        XCTAssertNotEqual(userLoginState.user, User(userName: "user2", email: "user1@users.com", phone: "123456789"))
+        XCTAssertNotEqual(userLoginState.user, User(userName: "user2", email: "user2@users.com", phone: "123456789"))
+        XCTAssertNotEqual(userLoginState.user, User(userName: "user2", email: "user2@users.com", phone: "123456781"))
         XCTAssertNil(userLoginState.error)
     }
     
