@@ -8,6 +8,19 @@
 
 import UIKit
 
-class User: Equatable {
-
+struct User: Equatable, Hashable {
+    
+    var userName: String
+    var email: String
+    var phone: String
+    
+    static func ==(lhs: User, rhs: User) -> Bool {
+        return (lhs.userName == rhs.userName) &&
+               (lhs.email == rhs.email) &&
+               (lhs.phone == rhs.phone)
+    }
+    
+    var hashValue: Int {
+        return userName.hashValue + email.hashValue + phone.hashValue
+    }
 }

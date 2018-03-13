@@ -15,21 +15,21 @@ class UserLoginStateTests: XCTestCase {
         let userLoginState = UserLoginState(userName: "user1", email: "user1@users.com", phone: "123456789")
         XCTAssertEqual(userLoginState.isLoggedIn, true)
         XCTAssertEqual(userLoginState.user, User(userName: "user1", email: "user1@users.com", phone: "123456789"))
-        XCTAssertEqual(userLoginState.error, nil)
+        XCTAssertNil(userLoginState.error)
     }
     
     func testErrornousLogIn() {
-        let err = NSError.init()
+        let err = NSError.init(domain: "a", code: 1, userInfo: nil)
         let userLoginState = UserLoginState(error: err)
         XCTAssertEqual(userLoginState.isLoggedIn, false)
-        XCTAssertEqual(userLoginState.user, nil)
-        XCTAssertEqual(userLoginState.error, err)
+        XCTAssertNil(userLoginState.user)
+        XCTAssert(userLoginState.error! as NSError == err)
     }
     
     func testEmptyState() {
         let userLoginState = UserLoginState()
         XCTAssertEqual(userLoginState.isLoggedIn, false)
-        XCTAssertEqual(userLoginState.user, nil)
-        XCTAssertEqual(userLoginState.error, nil)
+        XCTAssertNil(userLoginState.user)
+        XCTAssertNil(userLoginState.error)
     }
 }
